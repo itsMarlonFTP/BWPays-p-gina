@@ -1222,22 +1222,22 @@
         <div class="contact-container">
             <h2 class="section-title2" style="color: white;">Comienza Hoy</h2>
             <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Completa el formulario y te contactamos para ofrecerte la mejor solución</p>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xykykjel" method="POST">
                 <div class="form-group">
                     <label>Nombre Completo</label>
-                    <input type="text" placeholder="Juan Pérez" required>
+                    <input type="text" name="nombre" placeholder="Juan Pérez" required>
                 </div>
                 <div class="form-group">
                     <label>Correo Electrónico</label>
-                    <input type="email" placeholder="juan@ejemplo.com" required>
+                    <input type="email" name="email" placeholder="juan@ejemplo.com" required>
                 </div>
                 <div class="form-group">
                     <label>Teléfono / WhatsApp</label>
-                    <input type="tel" placeholder="81-1234-5678" required>
+                    <input type="tel" name="telefono" placeholder="81-1234-5678" required>
                 </div>
                 <div class="form-group">
                     <label>Giro del Negocio</label>
-                    <select required>
+                    <select name="giro" required>
                         <option value="">Selecciona una opción</option>
                         <option>Retail / Tienda</option>
                         <option>Restaurante / Cafetería</option>
@@ -1248,11 +1248,11 @@
                 </div>
                 <div class="form-group">
                     <label>Ciudad</label>
-                    <input type="text" placeholder="Monterrey" required>
+                    <input type="text" name="ciudad" placeholder="Monterrey" required>
                 </div>
                 <div class="form-group">
                     <label>Mensaje (Opcional)</label>
-                    <textarea placeholder="Cuéntanos sobre tu negocio..."></textarea>
+                    <textarea name="mensaje" placeholder="Cuéntanos sobre tu negocio..."></textarea>
                 </div>
                 <button type="submit" class="btn-submit">Solicitar Información</button>
             </form>
